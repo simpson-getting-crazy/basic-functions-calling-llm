@@ -23,6 +23,8 @@ client = OpenAI(
     api_key=api_key,
 )
 
+user_input = input("Welcome to the Weather Assistant! Please enter a prompt: \n")
+
 def get_weather(latitude, longitude):
     response = requests.get(f"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,relative_humidity_2m,wind_speed_10m")
     data = response.json()
@@ -48,7 +50,7 @@ tools = [{
 
 messages = [
     {"role": "system", "content": "You are a helpful weather assistant"},
-    {"role": "user", "content": "What's the weather like in Paris today?"},
+    {"role": "user", "content": user_input},
 ]
 
 completion = client.chat.completions.create(
