@@ -1,0 +1,20 @@
+{ 'name': 'get_weather', 'args': { 'latitude': 48.8566, 'longitude': 2.3522
+    }, 'result': { 'time': '2025-03-27T03: 15', 'interval': 900, 'temperature_2m': 6.2, 'wind_speed_10m': 4.7
+    }
+}
+{ 'id': 'gen-1743045307-BHuI5ixHAVEoqI0UnBx5', 'choices': [
+        { 'finish_reason': 'tool_calls', 'index': 0, 'logprobs': None, 'message': { 'content': '', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': [
+                    { 'id': 'call_F0JxNtmh8qQ9SdAWYQsmr1g5', 'function': { 'arguments': '{
+                                "latitude": 48.8566,
+                                "longitude": 2.3522
+                            }', 'name': 'get_weather'
+                        }, 'type': 'function', 'index': 0
+                    }
+                ]
+            }, 'native_finish_reason': 'tool_calls'
+        }
+    ], 'created': 1743045307, 'model': 'openai/gpt-4o-2024-11-20', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_ea1a43c8ac', 'usage': { 'completion_tokens': 25, 'prompt_tokens': 66, 'total_tokens': 91, 'completion_tokens_details': { 'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 0, 'rejected_prediction_tokens': None
+        }, 'prompt_tokens_details': { 'audio_tokens': None, 'cached_tokens': 0
+        }
+    }, 'provider': 'OpenAI'
+}
